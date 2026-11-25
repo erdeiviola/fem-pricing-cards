@@ -1,0 +1,231 @@
+*{margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Montserrat', sans-serif;}
+
+body{
+  background-color: hsl(240, 78%, 98%);
+  background-image: url('./images/bg-top.svg'), url('./images/bg-bottom.svg');
+  background-size: 35% auto, auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 0 right -20%, bottom -20% left 0;
+  margin-bottom:100px;
+}
+
+.main-container{
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  gap:20px;
+  
+}
+
+.toggle-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 300px;;
+  margin-top: 20px;
+}
+
+.switch-btn{
+  background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border: none;
+  border-radius: 50px;
+  width:40px;
+  height:24px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.switch-btn:hover{
+  cursor: pointer;
+}
+
+.switch-btn-circle{
+  background-color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  left:4px;
+  
+  transition: all 0.3s ease-out;;
+}
+
+.switch-btn.is-monthly .switch-btn-circle{
+  left:18px;
+}
+
+
+@media only screen and (max-width: 1023px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+  
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:0px
+  }
+}
+
+.card-container {
+  width: 100%;
+
+  margin-top: 20px;
+
+  
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 32px;
+  gap: 24px;
+  width: 350px;
+  height: 453px;
+  border-radius: 10px;
+  
+   background-color: white;
+  color: hsl(237, 63%, 64%);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+
+}
+
+
+
+.pricing-card.active{
+  width: 350px;
+  height: 500px;
+  box-shadow: 0px 20px 40px rgba(0,0,0,0.2);
+  transition: all 0.9s ease-out;;
+  background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color:white;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+
+
+
+.pricing-card-btn{
+  width: 288px;
+  height: 44px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 13px;
+  line-height: 125%;
+   background-color: white;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid hsl(237, 63%, 64%);
+}
+
+.pricing-card-btn:hover{
+  cursor: pointer;
+  background-color: white;
+  color: hsl(237, 63%, 64%);
+}
+
+.pricing-card .pricing-card-btn{
+  background-color: hsl(237, 63%, 64%);
+  color: white;
+  border: 1px solid white;
+}
+.pricing-card .pricing-card-btn:hover{
+  background-color: white;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid hsl(237, 63%, 64%);
+}
+
+.pricing-card h3, .pricing-card p{
+  border-bottom: 1px solid hsl(237, 63%, 64%);
+}
+
+.pricing-card.active .pricing-card-btn{
+  background-color: white;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid hsl(237, 63%, 64%);
+}
+.pricing-card.active .pricing-card-btn:hover{
+  background-color: hsl(237, 63%, 64%);
+  color: white;
+  border: 1px solid white;
+}
+
+h1{
+  text-align: center;
+  padding: 24px auto;
+  color: #6E728E;
+ 
+}
+
+h2,h3,p{
+  text-align: center;
+ 
+  width: 288px;
+
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 155%;
+  padding-bottom: 0;
+  
+}
+
+h3 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 100%;
+  padding-bottom: 24px;
+ 
+}
+
+h3 span{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 125%;
+  position: relative;
+  top: -8px;
+
+}
+
+p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 185%;
+  width: 288px;
+  height: 44px;
+  padding: 16px auto;
+ 
+   border-bottom: 1px solid white;
+}
+
